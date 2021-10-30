@@ -6,6 +6,14 @@
     text-decoration: none;
 }
 
+/* Scroll Snapping */
+#main {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
 /* Hide Scrollbar but keep functionality */
 /* For chrome */
 body::-webkit-scrollbar {
@@ -19,6 +27,7 @@ body {
     overflow-y: scroll; 
 }
 
+/* Fonts */
 @font-face {
     font-family: 'Gotham';
     src: url('../fonts/GothamSSm-Book_Web.woff2');
@@ -47,9 +56,19 @@ body {
     font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+.bold-txt {
+    font-family: "Gotham Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.light-txt {
+    font-family: "Gotham Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 .medium-txt {
     font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+
 
 /* Side Scroll Bar Styling */
 #side-bar {
@@ -81,12 +100,19 @@ body {
     background: url('../img/model\ 3.jfif') center center/cover;
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 #section-2 {
-    background: url('../img/model_3_safety_hero.png') center center/cover;
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section-3 {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
 /* Header Styling */
@@ -274,3 +300,290 @@ header .other {
 }
 
 /* Section 2 Styling */
+#section-2 #left-section {
+    width: 20vw;
+    padding: 0 50px;
+    float: left;
+    background: #fff;
+}
+
+#section-2 #left-section .title-txt {
+    position: relative;
+    top: 50px;
+}
+
+#section-2 #left-section .title-txt h2 {
+    font-size: 17px;
+    line-height: 17px;
+    color: #181b21;
+    font-weight: 500;
+}
+
+#section-2 #left-section .title-txt h1 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #181b21;
+}
+
+#section-2 #left-section .info-box {
+    position: relative;
+    top: 60px;
+}
+
+#section-2 #left-section .info-box p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #393c41;
+    padding: 0 0 16px;
+}
+
+#section-2 #left-section .rating-box {
+    background: #E2E4E4;
+    border-radius: 20px;
+    padding: 24px;
+    width: max-content;
+}
+
+#section-2 #left-section .rating-box .top-txt {
+    padding: 0 0 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #181b21;
+    text-align: center;
+    display: inline-block;
+}
+
+#section-2 #left-section .rating-box ol {
+    list-style: none;
+}
+
+#section-2 #left-section .rating-box ol li {
+    padding: 0 0 8px;
+}
+
+#section-2 #left-section .rating-box ol li .left-box .left-top-box {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #393c41;
+}
+
+#section-2 #left-section .rating-box ol li .left-box .left-bottom-box {
+    font-size: 8px;
+    line-height: 8px;
+    font-weight: 400;
+    color: #393c41;
+}
+
+#section-2 #left-section .rating-box ol li .right-box {
+    float: right;
+    position: relative;
+    bottom: 30px;
+}
+
+#section-2 #left-section .bottom-btns {
+    margin: 16px 0 0;
+    padding: 0 0 48px;
+    background: #F5F5F5;
+}
+
+#section-2 #left-section .bottom-btns a {
+    float: left;
+    position: relative;
+    bottom: -230px;
+    color: #393c41;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#section-2 #left-section .bottom-btns .left-btn {
+    position: relative;
+    bottom: -225px;
+}
+
+#section-2 #left-section .bottom-btns .left-btn span {
+    position: relative;
+    font-size: 35px;
+    border: 4px solid #000;
+    border-radius: 80%;
+    bottom: -5px;
+}
+
+#section-2 #left-section .bottom-btns span:hover {
+    color: #fff;
+    background: #000;
+}
+
+#section-2 #left-section .bottom-btns .right-btn {
+    position: relative;
+    left: 10px;
+    padding: 10px 20px;
+    border: #000 2px solid;
+    border-radius: 20px;
+}
+
+#section-2 #left-section .bottom-btns .right-btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+#section-2 {
+    background: #F5F5F5;
+}
+
+#section-2 #right-section {
+    height: 100vh;
+}
+
+#section-2 #right-section img {
+    float: left;
+    width: 70vw;
+    height: 100vh;
+}
+
+/* Section 3 Styling */
+#section-3 .top-box {
+    background: url(../img/lhd-performance-hero-desktop.jfif) center center/cover;
+    width: 100vw;
+    height: 70vh;
+}
+
+#section-3 .top-box .txt-section .box {
+    width: fit-content;
+    color: #fff;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+#section-3 .top-box .txt-section #box-1 {
+    top: 530px;
+    left: 495px;
+}
+
+#section-3 .top-box .txt-section span{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+#section-3 .top-box .txt-section p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#section-3 .top-box .txt-section #box-2 {
+    top: 540px;
+    left: 540px;
+}
+
+#section-3 .top-box .txt-section #box-2 span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#section-3 .top-box .txt-section #box-2 p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#section-3 .top-box .txt-section #box-3 {
+    top: 540px;
+    left: 585px;
+}
+
+#section-3 .top-box .txt-section #box-3 span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#section-3 .top-box .txt-section #box-3 p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#section-3 .bottom-box {
+    padding: 0 48px;
+    width: 30vw;
+}
+
+#section-3 .bottom-box .title-txt h2 {
+    font-size: 17px;
+    line-height: 17px;
+    color: #181b21;
+    font-weight: 500;
+}
+
+#section-3 .bottom-box .title-txt h1 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #181b21;
+}
+
+#section-3 .bottom-box .left-box {
+    padding: 48px 16px 48px 0;
+    float: left;
+    position: relative;
+    left: 20vw;
+}
+
+#section-3 .bottom-box .btns-box {
+    margin: 16px 0 0;
+    padding: 0 0 48px;
+    display: flex;
+}
+
+#section-3 .bottom-box .btns-box a {
+    color: #393c41;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#section-3 .bottom-box .btns-box .left-btn span {
+    font-size: 35px;
+    border: 4px solid #000;
+    border-radius: 80%;
+}
+
+#section-3 .bottom-box .btns-box span:hover {
+    color: #fff;
+    background: #000;
+}
+
+#section-3 .bottom-box .btns-box .right-btn {
+    padding: 10px 20px;
+    border: #000 2px solid;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+#section-3 .bottom-box .btns-box .right-btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+#section-3 .bottom-box .right-box {
+    width: 29vw;
+    float: left;
+    position: relative;
+    left: 40vw;
+    bottom: 180px;
+}
+
+#section-3 .bottom-box .right-box p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #393c41;
+}
